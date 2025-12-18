@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="banco.controllers.DepositoController"
+      alignment="CENTER"
+      spacing="20"
+      styleClass="card">
+
+    <padding>
+        <Insets top="40" right="40" bottom="40" left="40"/>
+    </padding>
+
+    <Label text="Depósito" styleClass="title"/>
+
+    <TextField fx:id="txtDeposito"
+               promptText="Ingrese monto"
+               styleClass="input"
+               prefWidth="500"
+               maxWidth="500"
+               minWidth="500"
+               style="-fx-font-size: 20px;"/>
+
+    <Button text="Depositar"
+            fx:id="btnDepositar"
+            onAction="#procesarDeposito"
+            styleClass="primary-btn"/>
+
+    <Label fx:id="lblResultado"
+           text=""
+           visible="false"
+           styleClass="info"/>
+
+</VBox>

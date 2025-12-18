@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="banco.controllers.DashboardController"
+            stylesheets="/banco/styles/dashboard.css"
+            prefWidth="1200" prefHeight="900"
+            style="-fx-background-color: #F4F6F9;">
+
+    <left>
+        <VBox prefWidth="260"
+              spacing="20"
+              styleClass="sidebar">
+
+            <Label text="CHIPIBANK"
+                   styleClass="sidebar-title"/>
+
+            <Separator/>
+
+            <Button text="Inicio"       onAction="#cargarInicio"       styleClass="sidebar-btn"/>
+            <Button text="Saldo"        onAction="#cargarSaldo"        styleClass="sidebar-btn"/>
+            <Button text="Depósito"     onAction="#cargarDeposito"     styleClass="sidebar-btn"/>
+            <Button text="Retiro"       onAction="#cargarRetiro"       styleClass="sidebar-btn"/>
+            <Button text="Perfil"       onAction="#cargarPerfil"       styleClass="sidebar-btn"/>
+
+            <VBox VBox.vgrow="ALWAYS"/>
+
+            <Button text="⏻ Cerrar sesión"
+                    onAction="#cerrarSesion"
+                    styleClass="logout-btn"/>
+        </VBox>
+    </left>
+
+    <center>
+        <StackPane fx:id="areaContenido"
+                   styleClass="content"/>
+    </center>
+
+</BorderPane>

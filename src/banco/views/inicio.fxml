@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="banco.controllers.InicioController"
+      alignment="TOP_CENTER"
+      spacing="25">
+
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+
+    <Label fx:id="lblBienvenida"
+           text="Bienvenido a CHIPIBANK"
+           styleClass="title"/>
+
+    <VBox spacing="10" styleClass="info-card">
+        <Label fx:id="lblNombre" styleClass="info-title"/>
+        <Label fx:id="lblCuenta" styleClass="info-text"/>
+        <Label fx:id="lblSaldo" styleClass="info-saldo"/>
+    </VBox>
+
+    <HBox spacing="20">
+        <VBox alignment="CENTER" styleClass="stat-card">
+            <Label text="Transacciones Hoy" styleClass="stat-title"/>
+            <Label fx:id="lblTransHoy" styleClass="stat-value"/>
+        </VBox>
+
+        <VBox alignment="CENTER" styleClass="stat-card">
+            <Label text="Depósitos del Mes" styleClass="stat-title"/>
+            <Label fx:id="lblDepositosMes" styleClass="stat-value"/>
+        </VBox>
+
+        <VBox alignment="CENTER" styleClass="stat-card">
+            <Label text="Retiros del Mes" styleClass="stat-title"/>
+            <Label fx:id="lblRetirosMes" styleClass="stat-value"/>
+        </VBox>
+    </HBox>
+
+    <HBox alignment="CENTER_LEFT">
+    <padding>
+        <Insets top="0" right="0" bottom="0" left="5"/>
+    </padding>
+
+    <VBox spacing="12" maxWidth="600">
+        <Label text="Noticias" styleClass="section-title"/>
+
+        <VBox styleClass="news-card">
+            <Label text="Nuevo horario de atención" styleClass="news-title"/>
+            <Label text="Chipibank amplía su horario para brindarte mejor servicio." styleClass="news-text"/>
+        </VBox>
+
+        <VBox styleClass="news-card">
+            <Label text="Actualización de seguridad" styleClass="news-title"/>
+            <Label text="Nueva capa anti-fraude activa en todas las cuentas." styleClass="news-text"/>
+        </VBox>
+    </VBox>
+</HBox>
+
+
+</VBox>

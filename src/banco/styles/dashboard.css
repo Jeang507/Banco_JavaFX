@@ -1,0 +1,184 @@
+/* FUENTE GENERAL */
+* {
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* SIDEBAR CORPORATIVO PREMIUM */
+
+.sidebar {
+    -fx-background-color: #0A2A5E;
+    -fx-padding: 30;
+}
+
+.sidebar-title {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.sidebar-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #E0E6F0;
+    -fx-font-size: 16px;
+    -fx-padding: 12 0 12 10;
+    -fx-alignment: CENTER_LEFT;
+    -fx-background-radius: 8;
+}
+
+.sidebar-btn:hover {
+    -fx-background-color: rgba(255,255,255,0.10);
+}
+
+.logout-btn {
+    -fx-background-color: #D84343;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 12;
+    -fx-background-radius: 8;
+}
+
+.logout-btn:hover {
+    -fx-background-color: #B33232;
+}
+
+/* ONTENIDO CENTRAL */
+
+.content {
+    -fx-padding: 40;
+}
+
+/* TARJETAS BLANCAS CON SOMBRA */
+
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-padding: 25;
+    -fx-effect: dropshadow(gaussian, #00000033, 12, 0.1, 0, 3);
+}
+
+
+/* TÍTULOS CORPORATIVOS */
+.title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1A1A1A;
+}
+
+.subtitle {
+    -fx-font-size: 22px;
+    -fx-text-fill: #404040;
+    -fx-padding: 5px 0 0 0;
+}
+
+
+/* INPUTS */
+.input {
+    -fx-background-radius: 6;
+    -fx-padding: 10;
+}
+
+/* BOTÓN PRINCIPAL CORPORATIVO */
+.primary-btn {
+    -fx-background-color: #0A2A5E;
+    -fx-text-fill: white;
+    -fx-padding: 12;
+    -fx-background-radius: 8;
+    -fx-font-size: 15px;
+}
+
+.primary-btn:hover {
+    -fx-background-color: #073074;
+}
+
+.info {
+    -fx-font-size: 20px;
+    -fx-text-fill: #2A2A2A;
+}
+
+/* DASHBOARD - INICIO MODERNO */
+
+/* --- Tarjeta informativa del usuario --- */
+.info-card {
+    -fx-background-color: #F5F7FD;
+    -fx-background-radius: 12;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(gaussian, #00000022, 10, 0.1, 0, 2);
+}
+
+.info-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1A1A1A;
+}
+
+.info-text {
+    -fx-font-size: 16px;
+    -fx-text-fill: #444;
+}
+
+.info-saldo {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0A7A28; /* verde corporativo para saldo */
+    -fx-padding: 5 0 0 0;
+}
+
+/* --- Estadísticas rápidas --- */
+.stat-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-padding: 18;
+    -fx-min-width: 160;
+    -fx-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian, #00000033, 10, 0.1, 0, 3);
+}
+
+.stat-title {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555;
+}
+
+.stat-value {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1A1A1A;
+}
+
+/* --- Secciones como noticias --- */
+.section-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1A1A1A;
+    -fx-padding: 10 0 0 0;
+}
+
+.news-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(gaussian, #00000022, 10, 0.1, 0, 3);
+}
+
+.news-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1A1A1A;
+}
+
+.news-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555;
+}
+
+/* --- Mensajes de resultado (depósito/retiro) --- */
+.info-success {
+    -fx-text-fill: #0A7A28;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.info-error {
+    -fx-text-fill: #B00020;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}

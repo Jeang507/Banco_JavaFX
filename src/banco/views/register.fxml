@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="banco.controllers.RegisterController"
+           stylesheets="@../styles/dashboard.css"
+           style="-fx-background-color: #F4F6F9;">
+
+    <VBox alignment="CENTER"
+          spacing="16"
+          styleClass="card">
+
+        <padding>
+            <Insets top="30" right="30" bottom="30" left="30"/>
+        </padding>
+
+        <Label text="Crear Cuenta CHIPIBANK"
+               styleClass="title"
+               style="-fx-font-size: 24px;"/>
+
+        <TextField fx:id="txtUsuario"
+                   promptText="Usuario"
+                   styleClass="input"
+                   maxWidth="180" prefWidth="180" minWidth="350"
+                   style="-fx-font-size: 15px;"/>
+
+        <TextField fx:id="txtNombre"
+                   promptText="Nombre"
+                   styleClass="input"
+                   maxWidth="180" prefWidth="180" minWidth="350"
+                   style="-fx-font-size: 15px;"/>
+
+        <TextField fx:id="txtApellido"
+                   promptText="Apellido"
+                   styleClass="input"
+                   maxWidth="180" prefWidth="180" minWidth="350"
+                   style="-fx-font-size: 15px;"/>
+
+        <TextField fx:id="txtCedula"
+                   promptText="Cédula"
+                   styleClass="input"
+                   maxWidth="180" prefWidth="180" minWidth="350"
+                   style="-fx-font-size: 15px;"/>
+
+        <TextField fx:id="txtCuenta"
+                   promptText="Número de cuenta"
+                   styleClass="input"
+                   maxWidth="180" prefWidth="180" minWidth="350"
+                   style="-fx-font-size: 15px;"/>
+
+        <PasswordField fx:id="txtPin"
+                       promptText="PIN (4 dígitos)"
+                       styleClass="input"
+                       maxWidth="180" prefWidth="180" minWidth="350"
+                       style="-fx-font-size: 15px;"/>
+
+        <Button text="Registrar"
+                onAction="#registrarse"
+                styleClass="primary-btn"
+                prefWidth="180"
+                style="-fx-font-size: 16px;"/>
+
+        <Hyperlink text="Ya tengo una cuenta"
+                   onAction="#irAlLogin"
+                   style="-fx-font-size: 14px;"/>
+
+        <Label fx:id="lblError"
+               textFill="red"
+               visible="false"
+               style="-fx-font-size: 14px;"/>
+    </VBox>
+
+</StackPane>

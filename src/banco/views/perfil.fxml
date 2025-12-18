@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="banco.controllers.PerfilController"
+      alignment="CENTER"
+      spacing="25"
+      styleClass="card"
+      prefWidth="500">
+
+    <Label text="Información del Perfil" styleClass="title"/>
+
+    <VBox spacing="5" alignment="CENTER_LEFT" maxWidth="350">
+        <Label text="Nombre:" styleClass="subtitle"/>
+        <TextField fx:id="txtNombre" style="-fx-font-size: 18px;"/>
+    </VBox>
+
+    <VBox spacing="5" alignment="CENTER_LEFT" maxWidth="350">
+        <Label text="Apellido:" styleClass="subtitle"/>
+        <TextField fx:id="txtApellido" style="-fx-font-size: 18px;"/>
+    </VBox>
+
+    <VBox spacing="5" alignment="CENTER_LEFT" maxWidth="350">
+        <Label text="Cédula:" styleClass="subtitle"/>
+        <TextField fx:id="txtCedula" style="-fx-font-size: 18px;"/>
+    </VBox>
+
+    <VBox spacing="5" alignment="CENTER_LEFT" maxWidth="350">
+        <Label text="Cuenta:" styleClass="subtitle"/>
+        <TextField fx:id="txtCuenta" style="-fx-font-size: 18px;"/>
+    </VBox>
+
+    <VBox spacing="5" alignment="CENTER_LEFT" maxWidth="350">
+        <Label text="PIN:" styleClass="subtitle"/>
+        <PasswordField fx:id="txtPin" style="-fx-font-size: 18px;"/>
+    </VBox>
+
+    <Button text="Guardar Cambios"
+            onAction="#guardarCambios"
+            styleClass="primary-btn"
+            maxWidth="200"/>
+
+    <Label fx:id="lblEstado" visible="false" styleClass="info"/>
+
+</VBox>
