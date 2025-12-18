@@ -3,13 +3,9 @@
 Proyecto académico desarrollado en Java con JavaFX que simula el funcionamiento básico de un sistema bancario.  
 Permite a los usuarios registrarse, iniciar sesión y realizar operaciones como consulta de saldo, depósitos y retiros.
 
----
-
 ## Objetivo
 
 Aplicar conceptos de programación orientada a objetos, JavaFX y conexión a bases de datos en una aplicación funcional.
-
----
 
 ## Funcionalidades
 
@@ -21,26 +17,19 @@ Aplicar conceptos de programación orientada a objetos, JavaFX y conexión a bas
 - Edición de perfil  
 - Cierre de sesión  
 
----
-
 ## Estructura del proyecto
 
-El proyecto está organizado por capas, siguiendo una estructura clara:
+El código fuente se encuentra en `src/banco` y está organizado por capas:
 
-src/banco/
-├── controllers/
-├── dao/
-├── models/
-├── styles/
-├── views/
-└── Banco.java
+- `controllers`: controladores JavaFX
+- `dao`: acceso a datos mediante JDBC
+- `models`: modelos del dominio
+- `views`: vistas JavaFX (FXML y vistas en Java)
+- `styles`: estilos CSS
 
+El punto de entrada de la aplicación es `Banco.java`.
 
-Incluye además:
-- `lib/` para dependencias externas  
-- Scripts `run.sh` y `run.bat` para ejecución sin IDE
-
----
+El proyecto incluye además una carpeta `lib` para dependencias externas y scripts (`run.sh` y `run.bat`) para ejecutar la aplicación sin IDE.
 
 ## Tecnologías utilizadas
 
@@ -50,8 +39,6 @@ Incluye además:
 - CSS  
 - PostgreSQL  
 - JDBC  
-
----
 
 ## Arquitectura
 
@@ -64,14 +51,10 @@ El proyecto sigue el patrón **MVC (Modelo–Vista–Controlador)**:
 
 Esta separación facilita el mantenimiento y la extensión del proyecto.
 
----
-
 ## Base de datos
 
 La aplicación utiliza PostgreSQL para almacenar la información de usuarios y transacciones.  
 La conexión se maneja mediante JDBC.
-
----
 
 ## Ejecución del proyecto
 
