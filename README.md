@@ -62,7 +62,6 @@ El repositorio incluye scripts para compilar y ejecutar la aplicación sin neces
 
 ### Linux / macOS
 
-```bash
 chmod +x run.sh
 ./run.sh
 run.bat
